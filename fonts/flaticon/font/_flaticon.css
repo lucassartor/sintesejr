@@ -1,0 +1,47 @@
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 11/06/2019 12:44
+    */
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"), url("./Flaticon.woff2") format("woff2"), url("./Flaticon.woff") format("woff"), url("./Flaticon.ttf") format("truetype"), url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg"); } }
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.flaticon-fit:before {
+  content: "\f100"; }
+
+.flaticon-gym-1:before {
+  content: "\f101"; }
+
+.flaticon-gym:before {
+  content: "\f102"; }
+
+.flaticon-vegetables:before {
+  content: "\f103"; }
+
+.flaticon-fruit-juice:before {
+  content: "\f104"; }
+
+.flaticon-stationary-bike:before {
+  content: "\f105"; }
