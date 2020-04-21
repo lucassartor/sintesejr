@@ -671,9 +671,9 @@ section {
     margin-bottom: 30px;
     //color: #848692;
     color: #2f4d5a;
-
+    color: #35596a;
     z-index: 2;
-    text-transform: uppercase;
+    //text-transform: uppercase;
 }
 
 .section-title h2::after {
