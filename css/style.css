@@ -495,8 +495,8 @@ h1, h2, h3, h4, h5,
 }
 
 .section-title {
-    text-align: center;
-    padding-bottom: 30px;
+     text-align: center;
+     padding-bottom: 30px;
 }
 
 .section-title h2 {
@@ -857,6 +857,7 @@ h1, h2, h3, h4, h5,
         transform: rotate(360deg);
     }
 }
+
 
 /*--------------------------------------------------------------
 # Footer
