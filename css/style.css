@@ -888,3 +888,18 @@ h1, h2, h3, h4, h5,
 #footer .footer-links a:hover {
     color: rgb(28,5,137);
 }
+
+.img-sobre{width: 120%}
+.img-sobre img{
+    width: 120%;
+    padding: 5px;
+    border-radius: 90%;
+    box-shadow: 0 0 25px #0d0cb5;
+    float: left;
+    shape-outside: circle();
+    margin: 30px 90px 30px 0px;
+}
+
+.sobre-txt{
+    font-size: 27px;
+}
