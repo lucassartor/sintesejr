@@ -701,7 +701,40 @@ h1, h2, h3, h4, h5,
 .portfolio{
     padding-top: 60px;
 }
-
+.logo_portfolio{
+	width: 25%;
+}
+#logo_mackempreende {
+	padding-left: 150px;
+	width: 30%;
+	float: left;
+	margin-right: 50px;
+}
+.titulo-portfolio {
+	margin-left: 100px;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: justify;
+	margin-bottom: 50px;
+}
+.descricao-portfolio {
+	text-align: justify;
+	font-weight: bolder;
+	font-size: 25px;
+	margin-bottom: 100px;
+}
+#logo_insidewhats{
+	padding-left: 100px;
+	float: left;
+	width: 35%;
+	margin-right: 50px;
+}
+#logo_ssi{
+	padding-left: 100px;
+	float: left;
+	width: 25%;
+	margin-right: 50px;
+}
 /*--------------------------------------------------------------
 # Sobre Nós
 --------------------------------------------------------------*/
