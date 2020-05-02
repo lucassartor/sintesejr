@@ -640,60 +640,6 @@ h1, h2, h3, h4, h5,
     border-color: #fff;
 }
 
-
-/*--------------------------------------------------------------
-# Seção de Contaveis
---------------------------------------------------------------*/
-.counts {
-    padding-bottom: 30px;
-    background: linear-gradient(rgba(11,49,186, 0.8), #507cdf);
-
-
-}
-
-.counts .count-box {
-    padding: 30px;
-    width: 100%;
-}
-
-.counts .count-box i {
-    display: block;
-    font-size: 44px;
-    color: #ffff;
-    float: left;
-}
-
-.counts .count-box span {
-    font-size: 48px;
-    line-height: 40px;
-    display: block;
-    font-weight: 700;
-    color: #ffffff;
-    margin-left: 60px;
-}
-
-.counts .count-box p {
-    padding: 15px 0 0 0;
-    margin: 0 0 0 60px;
-    font-family: "Raleway", sans-serif;
-    font-size: 14px;
-    color: #ffffff;
-}
-
-.counts .count-box a {
-    font-weight: 600;
-    display: block;
-    margin-top: 20px;
-    color: #ffffff;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    transition: ease-in-out 0.3s;
-}
-
-.counts .count-box a:hover {
-    color: #6e9fb4;
-}
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -741,7 +687,84 @@ h1, h2, h3, h4, h5,
 
 .sobre-nos{
     padding-top: 60px;
+    background: #F7FBFE;
 }
+
+.img-sobre{width: 125%}
+.img-sobre img{
+    width: 125%;
+    padding: 10px;
+    box-shadow: 0 0 30px #0d0cb5;
+    float: left;
+    margin: 30px 50px 30px 0px;
+}
+
+.sobre-txt{
+    font-size: 20px;
+}
+
+.sintese
+{
+    color: #0d0cb5;
+    font-weight: 700;
+}
+
+/*--------------------------------------------------------------
+# Seção de Contaveis
+--------------------------------------------------------------*/
+.counts {
+    padding-bottom: 30px;
+    /*background: linear-gradient(rgba(80,124,223,1.2), #0d0cb5); */
+}
+
+.counts .count-box {
+    padding: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.counts .count-box i {
+    display: block;
+    font-size: 44px;
+    background:linear-gradient(rgba(80,124,223,1.2), #0d0cb5) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float: left;
+
+}
+
+.counts .count-box span {
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    background:linear-gradient(rgba(80,124,223,1.2), #0d0cb5) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 60px;
+
+}
+
+.counts .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
+
+.counts .count-box a {
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out 0.3s;
+}
+
+.counts .count-box a:hover {
+    color: #6e9fb4;
+}
+
 
 /*--------------------------------------------------------------
 # Seção de Contatox
@@ -922,15 +945,4 @@ h1, h2, h3, h4, h5,
     color: rgb(28,5,137);
 }
 
-.img-sobre{width: 125%}
-.img-sobre img{
-    width: 125%;
-    padding: 10px;
-    box-shadow: 0 0 30px #04046b;
-    float: left;
-    margin: 30px 50px 30px 0px;
-}
 
-.sobre-txt{
-    font-size: 27px;
-}
