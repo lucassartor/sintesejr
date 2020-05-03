@@ -84,6 +84,29 @@ h1, h2, h3, h4, h5,
     border-color: #fff;
     color: #000; }
 
+.btn.btn-outline-blue {
+
+    background: transparent;
+    color: rgb(80,124,223);
+    font-family: "Raleway", sans-serif;
+
+    }
+
+.border-gradient{
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(rgba(80,124,223, 0.8), #0d0cb5);
+
+}
+
+.btn.btn-outline-blue:hover {
+    background: linear-gradient(rgba(80,124,223, 1), #0d0cb5);
+
+    color: white; }
+
+
+
+
 
 /*--------------------------------------------------------------
 # Barra de navegação
@@ -531,10 +554,11 @@ h1, h2, h3, h4, h5,
 # Seção de Serviços
 --------------------------------------------------------------*/
 .services{
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 
 }
 .services .icon-box {
+    margin-top: 10px;
     padding: 30px;
     position: relative;
     overflow: hidden;
@@ -545,7 +569,7 @@ h1, h2, h3, h4, h5,
     z-index: 1;
 }
 
-.services .icon-box::before {
+/*.services .icon-box::before {
     content: '';
     position: absolute;
     background: white;
@@ -562,17 +586,20 @@ h1, h2, h3, h4, h5,
     background: #0d0cb5;
     top: 0;
     border-radius: 0px;
-}
+} */
 
 .services .icon {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .services .icon i {
     font-size: 48px;
     line-height: 1;
 //color: #67b0d1;
-    color: #0d0cb5;
+    background:linear-gradient(rgba(80,124,223,1.2), #0d0cb5) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
 }
 
@@ -580,6 +607,7 @@ h1, h2, h3, h4, h5,
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
+    text-align: center;
 }
 
 .services .title a {
@@ -591,8 +619,10 @@ h1, h2, h3, h4, h5,
     line-height: 28px;
     margin-bottom: 0;
     font-family: "Open Sans", sans-serif;
+    text-align: center;
 }
 
+/*
 .services .icon-box:hover .title a, .services .icon-box:hover .description {
     color: #fff;
 
@@ -600,7 +630,7 @@ h1, h2, h3, h4, h5,
 
 .services .icon-box:hover .icon i {
     color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Seção do Call to Action
@@ -646,48 +676,153 @@ h1, h2, h3, h4, h5,
 
 .portfolio{
     padding-top: 60px;
+    padding-bottom: 60px;
 	background: white;
     box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
 }
-.logo_portfolio{
-	width: 25%;
+
+.portfolio .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+
 }
-#logo_mackempreende {
-	width: 40%;
-	margin-left:110px;
-	margin-right: 50px;
-	margin-bottom: 70px;
+
+.portfolio .icon-box::before {
+    content: '';
+    position: absolute;
+    background: white;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.3s;
+    z-index: -1;
 }
-.titulo-portfolio {
-	
-	font-size: 22px;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 50px;
+
+.portfolio .icon {
+    margin-bottom: 15px;
 }
-.descricao-portfolio {
-	text-align: justify;
-	font-weight: bolder;
-	font-size: 20px;
-	margin-bottom: 100px;
-	margin-right: 50px;
-	margin-left:50px;
+
+.portfolio .icon i {
+    font-size: 48px;
+    line-height: 1;
+//color: #67b0d1;
+    color: #0d0cb5;
+    transition: all 0.3s ease-in-out;
 }
-#logo_insidewhats{
-	margin-left: 55px;
-	width: 75%;
-	margin-bottom: 70px;
-	margin-right: 50px;
+
+.portfolio .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#logo_ssi{
-	width: 55%;
-	margin-left: 85px;
-	margin-right: 50px;
-	margin-bottom: 70px;
+
+.portfolio .title a {
+    color: #111;
 }
+
+.portfolio .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+    //font-family: "Raleway", sans-serif;
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description-inside{
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: center;
+    margin-bottom: 75px;
+}
+.logo-empresa{
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_inside{
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    width: 180px;
+}
+
+.ver-projeto{
+    text-align: center;
+    font-size: 18px;
+}
+
+.ver-projeto a{
+    color: black;
+    //font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 10px;
+    padding: 30px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.ver-projeto a:after, .ver-projeto a:before{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(rgba(80,124,223,1.2), #0d0cb5);
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.ver-projeto a:before{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.ver-projeto a:hover:before, .ver-projeto a:hover:after{
+    opacity: 1;
+    transform: translateY(25px);
+}
+
+
+
+/* .portfolio .icon-box:hover .content  {
+    opacity:0; filter:alpha(opacity=0);
+
+}
+
+.portfolio .icon-box:hover .description{
+
+}
+
+
+.portfolio .icon-box:hover::before {
+//background: #67b0d1;
+    background: #0d0cb5;
+    top: 0;
+    border-radius: 0px;
+} */
+
+
+
+
 /*--------------------------------------------------------------
 # Sobre Nós
 --------------------------------------------------------------*/
@@ -755,7 +890,6 @@ h1, h2, h3, h4, h5,
 .counts .count-box p {
     padding: 15px 0 0 0;
     margin: 0 0 0 60px;
-    font-family: "Raleway", sans-serif;
     font-size: 14px;
 }
 
@@ -804,6 +938,10 @@ h1, h2, h3, h4, h5,
     font-size: 18px;
     display: inline-block;
     background: #fff;
+    background:linear-gradient(rgba(80,124,223,1.2), #0d0cb5) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float: left;
     color: #0d0cb5;
     line-height: 1;
     padding: 8px 0;
@@ -816,9 +954,15 @@ h1, h2, h3, h4, h5,
     border: 1px solid #0d0cb5;
 }
 
-.contact .social-links a:hover {
-    background: #0d0cb5;
+.contact .social-links a:hover{
+    background: linear-gradient(rgba(80,124,223,1.2), #0d0cb5);
     color: #fff;
+}
+.contact .social-links a:hover i{
+    background:linear-gradient(white, white) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .contact .info {
@@ -827,7 +971,9 @@ h1, h2, h3, h4, h5,
 
 .contact .info i {
     font-size: 32px;
-    color: #0d0cb5;
+    background:linear-gradient(rgba(80,124,223,1.2), #0d0cb5) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     float: left;
     line-height: 1;
 }
