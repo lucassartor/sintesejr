@@ -832,11 +832,16 @@ h1, h2, h3, h4, h5,
     background: #F7FBFE;
 }
 
-.img-sobre{width: 125%}
-.img-sobre img{
+.img-sobre{
     width: 125%;
-    padding: 10px;
-    box-shadow: 0 0 30px #0d0cb5;
+}
+
+.img-sobre figure{
+    position: relative;
+}
+
+.img-sobre figure img{
+    width: 125%;
     float: left;
     margin: 30px 50px 30px 0px;
 }
