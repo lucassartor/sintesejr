@@ -330,32 +330,31 @@
 
                       <!-- ======= Formulário de Contato ======= -->
                       <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-                          <form action="https://script.google.com/macros/s/AKfycbxUncd78Xr9FIOqohEr1om1JOXQMoBSZdLkR3ko-jiqjxcWqhE/exec" method="post" role="form" class="php-email-form">
-                              <div class="form-group">
-                                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                  <div class="validate"></div>
+                          <form id="contact" action="https://script.google.com/macros/s/AKfycbxUncd78Xr9FIOqohEr1om1JOXQMoBSZdLkR3ko-jiqjxcWqhE/exec" method="post" class="contact-form">
+                            <label>Nome:</label> 
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" placeholder="Seu Nome" />
+                                <small>Error message</small>
                               </div>
 
+                              <label>E-Mail:</label>
                               <div class="form-group">
-                                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Please enter a valid email" />
-                                  <div class="validate"></div>
+                                <input type="email" name="email" id="email" placeholder="Seu Email" />
+                                <small>Error message</small>
                               </div>
 
+                              <label >Assunto:</label>
                               <div class="form-group">
-                                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                  <div class="validate"></div>
+                                <input type="text"name="subject" id="subject" placeholder="Assunto da mensagem"/>
+                                <small>Error message</small>
                               </div>
 
+                              <label>Mensagem:</label>
                               <div class="form-group">
-                                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Sua Mensagem"></textarea>
-                                  <div class="validate"></div>
+                                <textarea name="message" rows="5" id="message" placeholder="Sua Mensagem"></textarea>
+                                <small>Error message</small>
                               </div>
 
-                              <div class="mb-3">
-                                  <div class="loading">Loading</div>
-                                  <div class="error-message"></div>
-                                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                              </div>
                               <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
                           </form>
                       </div>
@@ -400,6 +399,7 @@
       <script src="js/main.js"></script>
       <script src="js/typewriter.js"></script>
       <script src="js/jquery.easing.1.3.js"></script>
+      <script defer src="js/validation.mail.js"></script>
 
 
 </div>
