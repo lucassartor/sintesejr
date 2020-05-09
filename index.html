@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,12 +20,17 @@
     <!-- Arquivos CSS Externos -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/venobox/venobox.css" type="text/css" media="screen" />
 
     <!-- Arquivo CSS Principal -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+<div class="page-loader">
+    <div class="loader">Carregando...</div>
+</div>
 
 <div class="site-wrap">
 
@@ -68,6 +72,7 @@
      <a id="bgndVideo" class="player"
         data-property="{videoURL:'https://www.youtube.com/watch?v=uLhPSFyuhbE',showYTLogo:false, showAnnotations: false, showControls: false, cc_load_policy: false, containment:'#home-section',autoPlay:true, mute:true, startAt:0, stopAt: 500, opacity:1}">
      </a>
+
     
      <div class="intro-section" id="home-section" style="background-color: #ccc;">
          <div class="container">
@@ -90,7 +95,7 @@
 
 
       <!-- ======= Seções ======= -->
-      <div class="site-section">
+    <div class="site-section">
 
           <!-- ======= Seção de Serviços ======= -->
           <section id="services" class="services">
@@ -108,6 +113,7 @@
                               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                           </div>
                       </div>
+
 
                       <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -154,7 +160,7 @@
 
 			<!-- ====== Seção Portifólio  ======= -->
 			<section id="portfolio" class="portfolio">
-				<div class="container">
+				<div class="container-fluid">
                     <div class="section-title" data-aos="fade-up">
                         <h2>Portfólio</h2>
                         <p>Alguns de nossos projetos mais recentes</p>
@@ -162,34 +168,49 @@
 
                     <div class="row">
 
-                        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="col-md-6 col-lg-4 mt-lg-5 mb-5 mb-lg-0">
+                            <div class="icon-box foto-portfolio-esquerda" data-aos="fade-up">
+                                    <div class="portfolio-wrap">
+                                        <img src="img/portfolio/teste6.png"class="img-fluid" alt="">
+                                        <div class="portfolio-info">
+                                            <h4>Exemplo 1</h4>
+                                            <p>Site de empresa</p>
+                                            <div class="portfolio-links">
+                                                <a href="img/portfolio/teste6.png" data-gall="portfolioGallery" class="venobox" title="Exemplo 1"><i class="bx bx-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4  mb-5 mb-lg-0">
                             <div class="icon-box" data-aos="fade-up">
-                                <div class="content">
-                                    <div class="icon"><img src="img/portfolio/logo_mackempreende.png" class="logo-empresa"></div>
-                                    <h4 class="title">MackEmpreende</h4>
-                                    <p class="description">Projeto desenvolvido para a MackEmpreende, que é a liga de empreendedorismo da Universidade Mackenzie que consiste numa planilha automatizada para o gerenciamento e gestão das principais atividades internas da empresa. </p>
-                                    <h4 class="ver-projeto"><a href="#">VER PROJETO</a></h4>
+                                <div class="portfolio-wrap">
+                                    <img src="img/portfolio/teste7.png" class="img-fluid" alt="">
+                                    <div class="portfolio-info">
+                                        <h4>App 1</h4>
+                                        <p>App</p>
+                                        <div class="portfolio-links">
+                                            <a href="img/portfolio/teste7.png" data-gall="portfolioGallery" class="venobox" title="Exemplo 2"><i class="bx bx-plus"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                            <div class="icon-box" data-aos="fade-up">
-                                <div class="icon"><img src="img/portfolio/logo.svg" class="logo_inside"></div>
-                                <h4 class="title">Inside Whats</h4>
-                                <p class="description-inside">Uma landing page para captação de leads desenvolvida para a empresa InsideWhats a fim de inserir a mesma no ambiente web a partir de plataformas como desktop e dispositivos mobile. </p>
-                                <h4 class="ver-projeto"><a href="#">VER PROJETO</a></h4>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                            <div class="icon-box" data-aos="fade-up">
-                                <div class="icon"><img src="img/portfolio/logo_ssi.png" class="logo-empresa"></div>
-                                <h4 class="title">SSI</h4>
-                                <p class="description">Site desenvolvido para dar um suporte ao evento Semana de Sistemas de Informação (SSI) que acontece anualmente na Universidade de São Paulo, com um cronograma do evento e informações acerca das palestras para os participantes.</p>
-                                <h4 class="ver-projeto"><a href="#">VER PROJETO</a></h4>
+                        <div class="col-md-6 col-lg-4 mt-lg-5  mb-5 mb-lg-0">
+                            <div class="icon-box foto-portfolio-direita" data-aos="fade-up">
+                                <div class="portfolio-wrap">
+                                    <img src="img/portfolio/teste8.png" class="img-fluid" alt="">
+                                    <div class="portfolio-info">
+                                        <h4>App 1</h4>
+                                        <p>App</p>
+                                        <div class="portfolio-links">
+                                            <a href="img/portfolio/teste8.png" data-gall="portfolioGallery" class="venobox" title="Exemplo 3"><i class="bx bx-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -218,33 +239,6 @@
                   </div> 
               </div>
           </section>
-
-
-          <!--
- <img class="logo_portfolio" src="img/sintese/logo/Sintese_logoH.png" /> caso coloque o logo
-<div class="row">
-    <div class="col">
-        <div class="mackempreende" data-aos="fade-up" data-aos-delay="300">
-            <p class="titulo-portfolio"> Planilha de gerenciamento automatizada MackEmpreende </p>
-            <img id="logo_mackempreende" src="img/portfolio/logo_mackempreende.png" alt="MackEmpreende" title="MackEmpreende" />
-            <p class="descricao-portfolio"> Projeto desenvolvido para a MackEmpreende, que é a liga de empreendedorismo da Universidade Mackenzie que consiste numa planilha automatizada para o gerenciamento e gestão das principais atividades internas da empresa. </p>
-        </div>
-    </div>
-    <div class="col">
-        <div class="InsideWhats" data-aos="fade-up" data-aos-delay="300">
-            <p class="titulo-portfolio"> Landing page InsideWhats </p>
-            <img id="logo_insidewhats" src="img/portfolio/logo_insidewhats.png" alt="InsideWhats" title="InsideWhats" />
-            <p class="descricao-portfolio"> Uma landing page para captação de leads desenvolvida para a empresa InsideWhats a fim de inserir a mesma no ambiente web a partir de plataformas como desktop e dispositivos mobile. </p>
-        </div>
-    </div>
-    <div class="col">
-        <div class="SSI" data-aos="fade-up" data-aos-delay="300">
-            <p class="titulo-portfolio"> Site de evento SSI - Semana de Sistemas de Informação</p>
-            <img id="logo_ssi" src="img/portfolio/logo_ssi.png" alt="SSI - Semana de Sistemas de Informação" title="SSI - Semana de Sistemas de Informação" />
-            <p class="descricao-portfolio"> Site desenvolvido para dar um suporte ao evento Semana de Sistemas de Informação que acontece anualmente na Universidade de São Paulo, com um cronograma do evento e informações acerca das palestras para os participantes. </p>
-        </div>
-    </div>
-</div> -->
 
           <!-- ======= Seção Contaveis ======= -->
 
@@ -330,43 +324,42 @@
 
                       <!-- ======= Formulário de Contato ======= -->
                       <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-                          <iframe name="hiddenFrame" class="hide"></iframe>
-                          <form id="contact" action="https://script.google.com/macros/s/AKfycbxUncd78Xr9FIOqohEr1om1JOXQMoBSZdLkR3ko-jiqjxcWqhE/exec" target="hiddenFrame" method="post" class="contact-form">
-                            <label>Nome:</label> 
-                            <div class="form-group">
-                                <input type="text" name="name" id="name" placeholder="Seu Nome" />
-                                <small>Error message</small>
-                              </div>
+                          <form id="contact" action="https://script.google.com/macros/s/AKfycbxUncd78Xr9FIOqohEr1om1JOXQMoBSZdLkR3ko-jiqjxcWqhE/exec" method="post" class="contact-form">
+                              <iframe name="hiddenFrame" class="hide"></iframe>
+                              <form id="contact" action="https://script.google.com/macros/s/AKfycbxUncd78Xr9FIOqohEr1om1JOXQMoBSZdLkR3ko-jiqjxcWqhE/exec" target="hiddenFrame" method="post" class="contact-form">
+                                  <label>Nome:</label>
+                                  <div class="form-group">
+                                      <input type="text" name="name" id="name" placeholder="Seu Nome" />
+                                      <small>Error message</small>
+                                  </div>
+                                  <label>E-Mail:</label>
+                                  <div class="form-group">
+                                      <input type="email" name="email" id="email" placeholder="Seu Email" />
+                                      <small>Error message</small>
+                                  </div>
+                                  <label >Assunto:</label>
+                                  <div class="form-group">
+                                      <input type="text"name="subject" id="subject" placeholder="Assunto da mensagem"/>
+                                      <small>Error message</small>
+                                  </div>
+                                  <label>Mensagem:</label>
+                                  <div class="form-group">
+                                      <textarea name="message" rows="5" id="message" placeholder="Sua Mensagem"></textarea>
+                                      <small>Error message</small>
+                                  </div>
 
-                              <label>E-Mail:</label>
-                              <div class="form-group">
-                                <input type="email" name="email" id="email" placeholder="Seu Email" />
-                                <small>Error message</small>
-                              </div>
 
-                              <label >Assunto:</label>
-                              <div class="form-group">
-                                <input type="text"name="subject" id="subject" placeholder="Assunto da mensagem"/>
-                                <small>Error message</small>
-                              </div>
+                                  <div id="messageSent" class="message-notSent">Mensagem Enviada!</div>
+                                  <br>
+                                  <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
 
-                              <label>Mensagem:</label>
-                              <div class="form-group">
-                                <textarea name="message" rows="5" id="message" placeholder="Sua Mensagem"></textarea>
-                                <small>Error message</small>
-                              </div>
-                              
-                              <div id="messageSent" class="message-notSent">Mensagem Enviada!</div>
-                              <br> 
-                              <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
-                              
-                              
-                          </form>
+
+                              </form>
                       </div>
                   </div>
               </div>
           </section>
-      </div>
+    </div>
 
       <!-- ======= Footer ======= -->
       <footer id="footer">
@@ -404,6 +397,8 @@
       <script src="js/main.js"></script>
       <script src="js/typewriter.js"></script>
       <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/venobox/venobox.min.js"></script>
+      <script src="js/load.js"></script>
       <script defer src="js/validation.mail.js"></script>
 
 

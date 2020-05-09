@@ -25,9 +25,9 @@ contact.addEventListener('submit', (e)=> {
     }else if (!isEmail(email.value)) {
         setErrorFor(email, errMessage);
         errors.push(errMessage);
-	} else {
-		setSuccessFor(email);
-	}
+    } else {
+        setSuccessFor(email);
+    }
 
     if(subject.value.trim().length < 3){
         errMessage = 'Insira um assunto válido';
@@ -44,7 +44,7 @@ contact.addEventListener('submit', (e)=> {
     }else{
         setSuccessFor(message);
     };
-    
+
     if(errors.length>0){
         e.preventDefault();
         messageSent.className = "message-notSent";
@@ -56,11 +56,11 @@ contact.addEventListener('submit', (e)=> {
             subject.value = "";
             message.value = "";
         }, 2000);
-        
+
         setTimeout(function(){
             messageSent.className = "message-sent";
         }, 2200);
-        
+
     }
 });
 
@@ -78,8 +78,5 @@ function setSuccessFor(field){
 }
 
 function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
-
-
-
