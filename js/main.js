@@ -1,14 +1,18 @@
- AOS.init({
+AOS.init({
  	duration: 800,
  	easing: 'slide',
  	once: true
  });
 
+
+
 jQuery(document).ready(function($) {
 
 	"use strict";
 
-	
+	$(document).ready(function(){
+		$('.venobox').venobox();
+	});
 
 	var siteMenuClone = function() {
 
@@ -263,9 +267,11 @@ jQuery(document).ready(function($) {
   };
   OnePageNavigation();
 
+
   var siteScroll = function() {
 
-  	
+
+
 
   	$(window).scroll(function() {
 
