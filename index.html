@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<!-- olá -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -330,7 +330,8 @@
 
                       <!-- ======= Formulário de Contato ======= -->
                       <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-                          <form id="contact" action="https://script.google.com/macros/s/AKfycbxUncd78Xr9FIOqohEr1om1JOXQMoBSZdLkR3ko-jiqjxcWqhE/exec" method="post" class="contact-form">
+                          <iframe name="hiddenFrame" class="hide"></iframe>
+                          <form id="contact" action="https://script.google.com/macros/s/AKfycbxUncd78Xr9FIOqohEr1om1JOXQMoBSZdLkR3ko-jiqjxcWqhE/exec" target="hiddenFrame" method="post" class="contact-form">
                             <label>Nome:</label> 
                             <div class="form-group">
                                 <input type="text" name="name" id="name" placeholder="Seu Nome" />
@@ -354,8 +355,12 @@
                                 <textarea name="message" rows="5" id="message" placeholder="Sua Mensagem"></textarea>
                                 <small>Error message</small>
                               </div>
-
+                              
+                              <div id="messageSent" class="message-notSent">Mensagem Enviada!</div>
+                              <br> 
                               <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
+                              
+                              
                           </form>
                       </div>
                   </div>

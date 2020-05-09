@@ -3,7 +3,7 @@ const subject = document.getElementById('subject');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 const contact = document.getElementById('contact');
-const errorEl = document.getElementById('error');
+const messageSent = document.getElementById('messageSent');
 
 contact.addEventListener('submit', (e)=> {
 
@@ -47,6 +47,20 @@ contact.addEventListener('submit', (e)=> {
     
     if(errors.length>0){
         e.preventDefault();
+        messageSent.className = "message-notSent";
+    }else{
+
+        setTimeout(function(){
+            name.value = "";
+            email.value = "";
+            subject.value = "";
+            message.value = "";
+        }, 2000);
+        
+        setTimeout(function(){
+            messageSent.className = "message-sent";
+        }, 2200);
+        
     }
 });
 
