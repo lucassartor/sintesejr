@@ -6,14 +6,17 @@ AOS.init({
 
 
 
+
+
 jQuery(document).ready(function($) {
 
 	"use strict";
 
-	$(document).ready(function(){
-		$('.venobox').venobox();
-	});
+	$('.venobox').venobox({share: []});
 
+	$('.venobox_custom').venobox({
+		frameheight: '600px'
+	});
 	var siteMenuClone = function() {
 
 		$('.js-clone-nav').each(function() {

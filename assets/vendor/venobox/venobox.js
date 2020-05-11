@@ -50,14 +50,15 @@
                 numerationColor : '#d2d2d2',
                 numerationPosition : 'top', // 'top' || 'bottom'
                 overlayClose: true, // disable overlay click-close - thanx @martybalandis
-                overlayColor : 'rgba(23,23,23,0.85)',
+                //overlayColor : 'rgba(23,23,23,0.85)',
+                overlayColor : '#0d0cb5',
                 spinner : 'double-bounce', // available: 'rotating-plane' | 'double-bounce' | 'wave' | 'wandering-cubes' | 'spinner-pulse' | 'chasing-dots' | 'three-bounce' | 'circle' | 'cube-grid' | 'fading-circle' | 'folding-cube'
                 spinColor : '#d2d2d2',
                 titleattr: 'title', // specific attribute to get a title (e.g. [data-title]) - thanx @mendezcode
                 titleBackground: '#161617',
                 titleColor: '#d2d2d2',
                 titlePosition : 'top', // 'top' || 'bottom'
-                share: [ 'facebook', 'twitter', 'linkedin', 'pinterest', 'download' ], 
+                share: [ 'download' ],
                 cb_pre_open: function(){ return true; }, // Callbacks - thanx @garyee
                 cb_post_open: function(){},
                 cb_pre_close: function(){ return true; },
@@ -67,6 +68,8 @@
                 cb_content_loaded: function(){},
                 cb_init: function(){}
             };
+
+
 
             var option = $.extend(defaults, options);
 
