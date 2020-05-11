@@ -1,7 +1,7 @@
-const name = document.getElementById('name');
-const subject = document.getElementById('subject');
+const name = document.getElementById('nome');
+const subject = document.getElementById('assunto');
 const email = document.getElementById('email');
-const message = document.getElementById('message');
+const message = document.getElementById('mensagem');
 const contact = document.getElementById('contact');
 const messageSent = document.getElementById('messageSent');
 
