@@ -167,6 +167,19 @@ h1, h2, h3, h4, h5,
     }
 }
 
+/*--------------------------------------------------------------
+# Contato Topo
+--------------------------------------------------------------*/
+.contato-topo .row .col-sm{
+max-width: 25%;
+background: transparent;
+}
+.contato-topo .row {
+background: transparent;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Barra de navegação
@@ -779,7 +792,9 @@ h1, h2, h3, h4, h5,
     transition: all 0.3s ease-in-out;
 }
 
-
+.portfolio #portfolio-titulo {
+	margin-top: 25px;
+}
 
 .portfolio .title {
     font-weight: 700;
@@ -896,7 +911,6 @@ h1, h2, h3, h4, h5,
 .portfolio .portfolio-wrap:hover .portfolio-info {
     opacity: 1;
 }
-
 /*--------------------------------------------------------------
 # Seção de Detalhes do Portfolio
 --------------------------------------------------------------*/
@@ -998,6 +1012,9 @@ h1, h2, h3, h4, h5,
     font-weight: 600;
 }
 
+.sobre-nos #sobre-nos-titulo {
+	margin-top: 25px;
+}
 /*--------------------------------------------------------------
 # Seção de Contaveis
 --------------------------------------------------------------*/
