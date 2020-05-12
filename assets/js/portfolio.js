@@ -26,7 +26,7 @@
     autoplay: true,
     dots: true,
     loop: true,
-    items: 3
+    items: 1
   });
 
 
