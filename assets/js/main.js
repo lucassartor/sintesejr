@@ -12,6 +12,13 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
+	$(".sobre-nos-carousel").owlCarousel({
+		autoplay: true,
+		dots: true,
+		loop: true,
+		items: 1
+	});
+
 	$('.venobox').venobox({share: []});
 
 	$('.venobox_custom').venobox({

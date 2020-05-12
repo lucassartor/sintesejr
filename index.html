@@ -22,6 +22,11 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendor/venobox/venobox.css" type="text/css" media="screen" />
 
+
+
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
     <!-- Arquivo CSS Principal -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -35,20 +40,6 @@
 
 
 <div class="site-wrap">
-
-<div class="contato-topo">
-	<div class="row">
-		<div class="col-sm">
-			<div class="icon"><i class="bx bx-phone"></i> (11) 3091-1038</div>
-		</div>
-		<div class="col-sm">
-			<div class="icon"><i class="bx bx-at"></i> contato@sintesejr.com</div>
-		</div>
-		<div class="col-sm">
-			<div class="icon"><i class="bx bxs-map"></i> Rua Arlindo Béttio, São Paulo, SP </div>
-		</div>
-	</div>
-</div>
 
     <!-- ======= Cabeçalho e Barra de Navegação ======= -->
     <div class="site-mobile-menu site-navbar-target">
@@ -96,7 +87,7 @@
                  <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
                      <h1>
                          Serviços?
-                         <a href="" class="typewrite" data-period="2000" data-type='[ "Sistemas Web", "Websites Responsivos", "Aplicativos", "Lojas Virtuais", "Otimização de Sites" ]' style="text-decoration: none; color: #848692">
+                         <a href="" class="typewrite" data-period="2000" data-type='[ "Sites Responsivos", "Lojas Virtuais", "Otimização de Sites", "Sistemas de Gerenciamento" ]' style="text-decoration: none; color: #848692">
                              <span class="wrap"></span>
                          </a>
                      </h1>
@@ -133,7 +124,7 @@
 
                       <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                              <div class="icon"><i class="bx bx-trending-up"></i></div>
+                              <div class="icon"><i class="bx bx-search-alt-2"></i></div>
                               <h4 class="title">Otimização de Sites (SEO)</h4>
                               <p class="description">Mudamos e aprimoramos o seu site do seu jeito.</p>
                           </div>
@@ -193,8 +184,6 @@
                                             <h4>Semana de Sistemas de Informação da USP</h4>
                                             <p>Site para evento acadêmico</p>
                                             <div class="portfolio-links">
-                                                <!-- <a href="img/portfolio/teste6.png" data-gall="portfolioGallery" class="venobox" title="Exemplo 1"><i class="bx bx-plus"></i></a> -->
-
                                                 <a class="venobox_custom" data-gall="portfolioGallery" title="Site da Semana de Sistemas de Informação" data-vbtype="iframe" href="detalhes_portfolio1.html"><i class="bx bx-plus"></i></a>
                                             </div>
                                         </div>
@@ -235,8 +224,11 @@
 
                     </div>
                 </div>
-				</div>
+
           </section>
+            </div>
+
+
 
         <!-- ====== Seção Sobre Nós  ======= -->
           <section id="sobre-nos" class="sobre-nos">
@@ -244,18 +236,23 @@
                   <div class="section-title" data-aos="fade-up" id="sobre-nos-titulo">
                       <h2>Sobre Nós</h2>
                       <br>
-                      <div class="col-lg-4 col-sm-8 col-8">
-                            <section class="img-sobre">
-                                <figure>
-                                    <img src="assets/img/sintese/fotos/about2.jpg">
-                                </figure>
-                            </section>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="owl-carousel sobre-nos-carousel">
+                                  <img src="assets/img/sintese/fotos/nova-8(edt).jpg"  alt="">
+                                  <img src="assets/img/sintese/fotos/nova(edt)-3.jpg"  alt="">
+                                  <img src="assets/img/sintese/fotos/nova-6(edt).jpg" alt="">
+                              </div>
+
+                          </div>
+                          <div class="col-lg-6">
+                              <p align="left" class="sobre-txt"> A <strong class="sintese">Síntese Júnior</strong> é a empresa júnior de
+                                 Sistemas de Informação da <strong>USP</strong>, sediada no campus da Escola de Artes, Ciências e Humanidades.<br>
+                                 No mercado desde 2017 e formada apenas por alunos do curso, a Síntese surgiu com o intuito de <strong>desenvolver soluções
+                                 tecnológicas acessíveis</strong> e de <strong>excelente qualidade</strong> para empresas.
+                              </p>
+                          </div>
                       </div>
-                      <p align="left" class="sobre-txt"> A <strong class="sintese">Síntese Júnior</strong> é a empresa júnior de
-                         Sistemas de Informação da <strong>USP</strong>, sediada no campus da Escola de Artes, Ciências e Humanidades.<br>
-                         No mercado desde 2017 e formada apenas por alunos do curso, a Síntese surgiu com o intuito de <strong>desenvolver soluções 
-                         tecnológicas acessíveis</strong> e de <strong>excelente qualidade</strong> para empresas.<br>
-                      </p>
                   </div> 
               </div>
           </section>
@@ -345,7 +342,7 @@
                       <!-- ======= Formulário de Contato ======= -->
                       <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
 
-                              <iframe name="hiddenFrame" class="hide"></iframe>
+
                               <form id="contact" action="https://script.google.com/macros/s/AKfycbxUncd78Xr9FIOqohEr1om1JOXQMoBSZdLkR3ko-jiqjxcWqhE/exec" target="hiddenFrame" method="post" class="contact-form">
                                   <label>Nome:</label>
                                   <div class="form-group">
@@ -420,6 +417,7 @@
       <script defer src="assets/js/validation.mail.js"></script>
       <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
       <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
 
 
 

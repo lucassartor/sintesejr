@@ -619,7 +619,7 @@ background: transparent;
     margin: 0 0 10px 15px;
 }
 
-.section-title p {
+.section-title p:not(.sobre-txt){
     margin: 15px 0 0 0;
 }
 
@@ -989,6 +989,7 @@ background: transparent;
 }
 
 .img-sobre{
+    margin-top: 10px;
     width: 125%;
 }
 
@@ -1003,9 +1004,34 @@ background: transparent;
 }
 
 .sobre-txt{
-    font-size: 27px;
+    font-size: 28px;
+
 }
 
+.owl-dots{
+
+    margin-top: 5px;
+    text-align: center;
+}
+
+.owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd !important;
+}
+
+.owl-dot.active {
+    background:linear-gradient(rgba(80,124,223,1.2), #0d0cb5) !important;
+
+}
+
+.sobre-nos-carousel
+{
+    margin-top: 10px;
+}
 .sintese
 {
     color: #0d0cb5;
@@ -1163,15 +1189,17 @@ background: transparent;
 }
 
 .form-group {
-	margin-bottom: 5px;
-	padding-bottom: 20px;
 	position: relative;
+    margin-bottom: 5px;
 }
+
+
 
 .contact-form label{
     font-size: medium;
     color: #111;
     display: inline-block;
+    margin-bottom: 0px;
 }
 
 .form-group small {
