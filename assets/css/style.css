@@ -168,20 +168,6 @@ h1, h2, h3, h4, h5,
 }
 
 /*--------------------------------------------------------------
-# Contato Topo
---------------------------------------------------------------*/
-.contato-topo .row .col-sm{
-max-width: 25%;
-background: transparent;
-}
-.contato-topo .row {
-background: transparent;
-}
-
-
-
-
-/*--------------------------------------------------------------
 # Barra de navegação
 --------------------------------------------------------------*/
 .site-logo{
@@ -522,6 +508,16 @@ background: transparent;
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/
+.typewrite{
+    text-decoration: none !important;
+    //color: #0d0cb5 !important;
+
+    background:linear-gradient(rgb(255, 255, 255),#CFCFD1, #848692) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
 .intro-section {
     position: relative; }
 .intro-section > .container {
@@ -787,8 +783,7 @@ background: transparent;
 .portfolio .icon i {
     font-size: 48px;
     line-height: 1;
-//color: #67b0d1;
-    color: #0d0cb5;
+    color: white;
     transition: all 0.3s ease-in-out;
 }
 
