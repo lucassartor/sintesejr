@@ -31,21 +31,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
 }
 
-.section-title h2::before, .section-title h2::after {
-  content: '';
-  width: 50px;
-  height: 2px;
-  background: #0d0cb5;
-  display: inline-block;
-}
 
-.section-title h2::before {
-  margin: 0 15px 10px 0;
-}
 
-.section-title h2::after {
-  margin: 0 0 10px 15px;
-}
+
 
 .section-title p {
   margin: 15px 0 0 0;

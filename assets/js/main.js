@@ -76,7 +76,7 @@ jQuery(document).ready(function($) {
 					$('body').removeClass('offcanvas-menu');
 				}
 			}
-		})
+		});
 
 		$('body').on('click', '.js-menu-toggle', function(e) {
 			var $this = $(this);
